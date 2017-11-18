@@ -2,15 +2,11 @@
 
 Hopefully you have a recent version of Mac OSX installed.
 
-01. If you have Mavericks (10.9) or Yosemite (10.10), you can install Command Line Tools using this command. Choose to install and follow the prompts.
+01. You can install Command Line Tools using this command. Choose to install and follow the prompts.
 
   In your terminal, type `xcode-select --install`
 
-02. If you have an earlier version of OSX, you will probably need to install Command Line Tools by downloading it from the Apple Developer Downloads site.
-
-  Once you're registered and signed in, you can search for Command Line Tools and download/install the latest version for your OSX version.
-
-03. Check that Command Line Tools have installed
+02. Check that Command Line Tools have installed
 
   In your terminal, type `gcc --version`
 
@@ -41,26 +37,26 @@ Hopefully you have a recent version of Mac OSX installed.
 
 08. Install the latest Ruby by typing this in your terminal:
     ```
-    rvm install 2.3.1
+    rvm install 2.4.1
     ```
 
 09. Install Rails
 
   In your terminal type:
     ```
-    rvm use ruby-2.3.1@rails500 --create
+    rvm use ruby-2.4.1@rails514 --create
     ```
 
 10. Now install the latest Rails:
     ```
-    gem install rails --version=5.0.0 --no-ri --no-rdoc
+    gem install rails --no-ri --no-rdoc
     ```
 
-  When it's finished, check the version with `rails -v`. It should be 5.0.0
+  When it's finished, check the version with `rails -v`. It should be 5.1.4
 
 11. Now set this as the default gemset:
     ```
-    rvm use ruby-2.3.1@rails500 --default
+    rvm use ruby-2.4.1@rails514 --default
     ```
 
 You're done!
